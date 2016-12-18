@@ -1,0 +1,155 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 593
+  ClientWidth = 783
+  Color = clWhite
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 32
+    Top = 128
+    Width = 342
+    Height = 17
+    Caption = #1089'. _______________________________________________________'
+  end
+  object Label2: TLabel
+    Left = 184
+    Top = 192
+    Width = 29
+    Height = 13
+    Caption = #1055'.'#1030'.'#1041'.'
+  end
+  object Label3: TLabel
+    Left = 176
+    Top = 240
+    Width = 52
+    Height = 13
+    Caption = #1030#1076#1077#1085#1090'.'#1082#1086#1076
+  end
+  object Label4: TLabel
+    Left = 188
+    Top = 288
+    Width = 25
+    Height = 13
+    Caption = #1057#1091#1084#1072
+  end
+  object Label5: TLabel
+    Left = 184
+    Top = 344
+    Width = 23
+    Height = 13
+    Caption = #1089#1091#1084#1072
+  end
+  object Label6: TLabel
+    Left = 136
+    Top = 376
+    Width = 188
+    Height = 26
+    Caption = '  '#1088'/'#1088' 31510931700243 - '#1094#1110#1083#1100#1086#1074#1110' '#1082#1086#1096#1090#1080'      '#1082#1086#1076' 04416694'
+    WordWrap = True
+  end
+  object Label7: TLabel
+    Left = 190
+    Top = 443
+    Width = 23
+    Height = 13
+    Caption = #1089#1091#1084#1072
+  end
+  object Label8: TLabel
+    Left = 64
+    Top = 488
+    Width = 32
+    Height = 13
+    Caption = '"____"'
+  end
+  object Label9: TLabel
+    Left = 136
+    Top = 488
+    Width = 154
+    Height = 13
+    Caption = '___________________ 2016 '#1088'.'
+  end
+  object Label10: TLabel
+    Left = 72
+    Top = 528
+    Width = 245
+    Height = 13
+    Caption = #1043#1086#1083'.'#1073#1091#1093'. _________________________________'
+  end
+  object Label11: TLabel
+    Left = 80
+    Top = 568
+    Width = 237
+    Height = 13
+    Caption = #1050#1072#1089#1080#1088' __________________________________'
+  end
+  object Label12: TLabel
+    Left = 32
+    Top = 60
+    Width = 515
+    Height = 13
+    Caption = 
+      #1052#1080#1093#1072#1083#1100#1095#1072#1085#1089#1100#1082#1072' '#1089#1110#1083#1100#1089#1100#1082#1072' '#1088#1072#1076#1072' '#1055#1086#1076#1072#1090#1086#1082' '#1085#1072' '#1079#1077#1084#1083#1102' '#1056#1072#1093'.33216813700243 ' +
+      '- '#1094#1110#1083#1100#1086#1074#1110' '#1082#1086#1096#1090#1080' '#1050#1086#1076'. 04416694'
+  end
+  object Button1: TButton
+    Left = 632
+    Top = 296
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Edit1: TEdit
+    Left = 56
+    Top = 117
+    Width = 318
+    Height = 21
+    TabOrder = 1
+  end
+  object Edit2: TEdit
+    Left = 56
+    Top = 165
+    Width = 318
+    Height = 21
+    TabOrder = 2
+  end
+  object Edit3: TEdit
+    Left = 57
+    Top = 213
+    Width = 317
+    Height = 21
+    TabOrder = 3
+  end
+  object Edit4: TEdit
+    Left = 57
+    Top = 257
+    Width = 317
+    Height = 25
+    BorderStyle = bsNone
+    TabOrder = 4
+  end
+  object Edit5: TEdit
+    Left = 57
+    Top = 317
+    Width = 317
+    Height = 21
+    TabOrder = 5
+  end
+  object Edit6: TEdit
+    Left = 64
+    Top = 416
+    Width = 310
+    Height = 21
+    TabOrder = 6
+  end
+end
