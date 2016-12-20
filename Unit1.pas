@@ -97,7 +97,7 @@ begin
 
   number := StrToInt(text);
 
-  ShowMessage(IntToStr(number));
+//  ShowMessage(IntToStr(number));
 
   Edit11.Text := IntToStr(number);
 
@@ -135,7 +135,7 @@ begin
   Rewrite(myFile);
   Append(myFile);
   Write(myFile, IntToStr(number));
-  ShowMessage(IntToStr(number));
+//  ShowMessage(IntToStr(number));
 
   CloseFile(myFile);
 

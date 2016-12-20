@@ -40,8 +40,6 @@ type
     ComboBox1: TComboBox;
     Label1: TLabel;
     procedure Button1Click(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
-    procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure ComboBox1Click(Sender: TObject);
 
 
@@ -69,20 +67,8 @@ implementation
 procedure TForm1.Button1Click(Sender: TObject);
    var saveDialog : TSaveDialog;
        Replace : integer;
-   var text : string;
-begin
-  AssignFile(myFile, 'Number.txt');
-
-  Reset(myFile);
-  while not Eof(myFile) do ReadLn(myFile, text);
-
-  number := StrToInt(text);
-
-  ShowMessage(IntToStr(number));
-
-  Edit11.Text := IntToStr(number);
-end;
-
+       text : string;
+  {************************************************}
   procedure FindAndReplace (SearchStr, ReplaceStr : string);
 
   begin
@@ -92,6 +78,7 @@ end;
     word.Selection.Find.Replacement.Text := ReplaceStr;
     word.Selection.Find.Execute (Replace := 2);
   end;
+    {************************************************}
 begin
     try
       Word := CreateOleObject('Word.Application');
@@ -102,6 +89,17 @@ begin
       exit;
     end;
 
+
+  AssignFile(myFile, 'Number.txt');
+
+  Reset(myFile);
+  while not Eof(myFile) do ReadLn(myFile, text);
+
+  number := StrToInt(text);
+
+  ShowMessage(IntToStr(number));
+
+  Edit11.Text := IntToStr(number);
 
 
   dir := GetCurrentDir;
@@ -139,31 +137,18 @@ begin
   Write(myFile, IntToStr(number));
   ShowMessage(IntToStr(number));
 
+  CloseFile(myFile);
+
 end;
-
-
 
 procedure TForm1.ComboBox1Click(Sender: TObject);
 begin
-
-
 
    if ComboBox1.ItemIndex = 0 then dorf := 'Михальча';
    if ComboBox1.ItemIndex = 1 then dorf := 'Заволока';
    if ComboBox1.ItemIndex = 2 then dorf := 'Спаська';
    if ComboBox1.ItemIndex = 3 then dorf := 'Дубове';
 
-
-
-
 end;
-
-procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
-begin
-      CloseFile(myFile);
-end;
-
-procedure TForm1.FormCreate(Sender: TObject);
-
 
 end.
